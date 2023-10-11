@@ -1,5 +1,7 @@
-FROM ubuntu:latest
-LABEL authors="joaco"
+FROM alpine:latest as build
+
+RUN apk update
+RUN apk add openjdk17
 
 COPY . .
 RUN chmod +x ./gradlew
