@@ -29,4 +29,5 @@ public class LocalidadController extends BaseControllerImpl<Localidad, Localidad
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
         }
     }
+
 }

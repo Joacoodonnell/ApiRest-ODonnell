@@ -29,4 +29,5 @@ public class AutorController extends BaseControllerImpl<Autor, AutorServiceImpl>
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
         }
     }
+
 }
